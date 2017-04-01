@@ -1,0 +1,1299 @@
+
+keypad.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000858  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000128  00802000  00000858  000008ec  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          00000010  00802128  00802128  00000a14  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  00000a14  2**0
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000058  00000000  00000000  00000a44  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00000c53  00000000  00000000  00000a9c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000209  00000000  00000000  000016ef  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   00000723  00000000  00000000  000018f8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000094  00000000  00000000  0000201c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00000270  00000000  00000000  000020b0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    00000973  00000000  00000000  00002320  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000060  00000000  00000000  00002c93  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	fd c0       	rjmp	.+506    	; 0x1fc <__ctors_end>
+   2:	00 00       	nop
+   4:	1a c1       	rjmp	.+564    	; 0x23a <__bad_interrupt>
+   6:	00 00       	nop
+   8:	18 c1       	rjmp	.+560    	; 0x23a <__bad_interrupt>
+   a:	00 00       	nop
+   c:	16 c1       	rjmp	.+556    	; 0x23a <__bad_interrupt>
+   e:	00 00       	nop
+  10:	14 c1       	rjmp	.+552    	; 0x23a <__bad_interrupt>
+  12:	00 00       	nop
+  14:	12 c1       	rjmp	.+548    	; 0x23a <__bad_interrupt>
+  16:	00 00       	nop
+  18:	10 c1       	rjmp	.+544    	; 0x23a <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	0e c1       	rjmp	.+540    	; 0x23a <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	0c c1       	rjmp	.+536    	; 0x23a <__bad_interrupt>
+  22:	00 00       	nop
+  24:	0a c1       	rjmp	.+532    	; 0x23a <__bad_interrupt>
+  26:	00 00       	nop
+  28:	08 c1       	rjmp	.+528    	; 0x23a <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	06 c1       	rjmp	.+524    	; 0x23a <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	04 c1       	rjmp	.+520    	; 0x23a <__bad_interrupt>
+  32:	00 00       	nop
+  34:	02 c1       	rjmp	.+516    	; 0x23a <__bad_interrupt>
+  36:	00 00       	nop
+  38:	00 c1       	rjmp	.+512    	; 0x23a <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	fe c0       	rjmp	.+508    	; 0x23a <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	fc c0       	rjmp	.+504    	; 0x23a <__bad_interrupt>
+  42:	00 00       	nop
+  44:	fa c0       	rjmp	.+500    	; 0x23a <__bad_interrupt>
+  46:	00 00       	nop
+  48:	f8 c0       	rjmp	.+496    	; 0x23a <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	f6 c0       	rjmp	.+492    	; 0x23a <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	f4 c0       	rjmp	.+488    	; 0x23a <__bad_interrupt>
+  52:	00 00       	nop
+  54:	f2 c0       	rjmp	.+484    	; 0x23a <__bad_interrupt>
+  56:	00 00       	nop
+  58:	f0 c0       	rjmp	.+480    	; 0x23a <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	ee c0       	rjmp	.+476    	; 0x23a <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	ec c0       	rjmp	.+472    	; 0x23a <__bad_interrupt>
+  62:	00 00       	nop
+  64:	ea c0       	rjmp	.+468    	; 0x23a <__bad_interrupt>
+  66:	00 00       	nop
+  68:	e8 c0       	rjmp	.+464    	; 0x23a <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	e6 c0       	rjmp	.+460    	; 0x23a <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	e4 c0       	rjmp	.+456    	; 0x23a <__bad_interrupt>
+  72:	00 00       	nop
+  74:	e2 c0       	rjmp	.+452    	; 0x23a <__bad_interrupt>
+  76:	00 00       	nop
+  78:	e0 c0       	rjmp	.+448    	; 0x23a <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	de c0       	rjmp	.+444    	; 0x23a <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	dc c0       	rjmp	.+440    	; 0x23a <__bad_interrupt>
+  82:	00 00       	nop
+  84:	da c0       	rjmp	.+436    	; 0x23a <__bad_interrupt>
+  86:	00 00       	nop
+  88:	d8 c0       	rjmp	.+432    	; 0x23a <__bad_interrupt>
+  8a:	00 00       	nop
+  8c:	d6 c0       	rjmp	.+428    	; 0x23a <__bad_interrupt>
+  8e:	00 00       	nop
+  90:	d4 c0       	rjmp	.+424    	; 0x23a <__bad_interrupt>
+  92:	00 00       	nop
+  94:	d2 c0       	rjmp	.+420    	; 0x23a <__bad_interrupt>
+  96:	00 00       	nop
+  98:	d0 c0       	rjmp	.+416    	; 0x23a <__bad_interrupt>
+  9a:	00 00       	nop
+  9c:	ce c0       	rjmp	.+412    	; 0x23a <__bad_interrupt>
+  9e:	00 00       	nop
+  a0:	cc c0       	rjmp	.+408    	; 0x23a <__bad_interrupt>
+  a2:	00 00       	nop
+  a4:	ca c0       	rjmp	.+404    	; 0x23a <__bad_interrupt>
+  a6:	00 00       	nop
+  a8:	c8 c0       	rjmp	.+400    	; 0x23a <__bad_interrupt>
+  aa:	00 00       	nop
+  ac:	c6 c0       	rjmp	.+396    	; 0x23a <__bad_interrupt>
+  ae:	00 00       	nop
+  b0:	c4 c0       	rjmp	.+392    	; 0x23a <__bad_interrupt>
+  b2:	00 00       	nop
+  b4:	c2 c0       	rjmp	.+388    	; 0x23a <__bad_interrupt>
+  b6:	00 00       	nop
+  b8:	c0 c0       	rjmp	.+384    	; 0x23a <__bad_interrupt>
+  ba:	00 00       	nop
+  bc:	be c0       	rjmp	.+380    	; 0x23a <__bad_interrupt>
+  be:	00 00       	nop
+  c0:	bc c0       	rjmp	.+376    	; 0x23a <__bad_interrupt>
+  c2:	00 00       	nop
+  c4:	ba c0       	rjmp	.+372    	; 0x23a <__bad_interrupt>
+  c6:	00 00       	nop
+  c8:	b8 c0       	rjmp	.+368    	; 0x23a <__bad_interrupt>
+  ca:	00 00       	nop
+  cc:	b6 c0       	rjmp	.+364    	; 0x23a <__bad_interrupt>
+  ce:	00 00       	nop
+  d0:	b4 c0       	rjmp	.+360    	; 0x23a <__bad_interrupt>
+  d2:	00 00       	nop
+  d4:	b2 c0       	rjmp	.+356    	; 0x23a <__bad_interrupt>
+  d6:	00 00       	nop
+  d8:	b0 c0       	rjmp	.+352    	; 0x23a <__bad_interrupt>
+  da:	00 00       	nop
+  dc:	ae c0       	rjmp	.+348    	; 0x23a <__bad_interrupt>
+  de:	00 00       	nop
+  e0:	ac c0       	rjmp	.+344    	; 0x23a <__bad_interrupt>
+  e2:	00 00       	nop
+  e4:	aa c0       	rjmp	.+340    	; 0x23a <__bad_interrupt>
+  e6:	00 00       	nop
+  e8:	a8 c0       	rjmp	.+336    	; 0x23a <__bad_interrupt>
+  ea:	00 00       	nop
+  ec:	a6 c0       	rjmp	.+332    	; 0x23a <__bad_interrupt>
+  ee:	00 00       	nop
+  f0:	a4 c0       	rjmp	.+328    	; 0x23a <__bad_interrupt>
+  f2:	00 00       	nop
+  f4:	a2 c0       	rjmp	.+324    	; 0x23a <__bad_interrupt>
+  f6:	00 00       	nop
+  f8:	a0 c0       	rjmp	.+320    	; 0x23a <__bad_interrupt>
+  fa:	00 00       	nop
+  fc:	9e c0       	rjmp	.+316    	; 0x23a <__bad_interrupt>
+  fe:	00 00       	nop
+ 100:	9c c0       	rjmp	.+312    	; 0x23a <__bad_interrupt>
+ 102:	00 00       	nop
+ 104:	9a c0       	rjmp	.+308    	; 0x23a <__bad_interrupt>
+ 106:	00 00       	nop
+ 108:	98 c0       	rjmp	.+304    	; 0x23a <__bad_interrupt>
+ 10a:	00 00       	nop
+ 10c:	96 c0       	rjmp	.+300    	; 0x23a <__bad_interrupt>
+ 10e:	00 00       	nop
+ 110:	94 c0       	rjmp	.+296    	; 0x23a <__bad_interrupt>
+ 112:	00 00       	nop
+ 114:	92 c0       	rjmp	.+292    	; 0x23a <__bad_interrupt>
+ 116:	00 00       	nop
+ 118:	90 c0       	rjmp	.+288    	; 0x23a <__bad_interrupt>
+ 11a:	00 00       	nop
+ 11c:	8e c0       	rjmp	.+284    	; 0x23a <__bad_interrupt>
+ 11e:	00 00       	nop
+ 120:	8c c0       	rjmp	.+280    	; 0x23a <__bad_interrupt>
+ 122:	00 00       	nop
+ 124:	8a c0       	rjmp	.+276    	; 0x23a <__bad_interrupt>
+ 126:	00 00       	nop
+ 128:	88 c0       	rjmp	.+272    	; 0x23a <__bad_interrupt>
+ 12a:	00 00       	nop
+ 12c:	86 c0       	rjmp	.+268    	; 0x23a <__bad_interrupt>
+ 12e:	00 00       	nop
+ 130:	84 c0       	rjmp	.+264    	; 0x23a <__bad_interrupt>
+ 132:	00 00       	nop
+ 134:	82 c0       	rjmp	.+260    	; 0x23a <__bad_interrupt>
+ 136:	00 00       	nop
+ 138:	80 c0       	rjmp	.+256    	; 0x23a <__bad_interrupt>
+ 13a:	00 00       	nop
+ 13c:	7e c0       	rjmp	.+252    	; 0x23a <__bad_interrupt>
+ 13e:	00 00       	nop
+ 140:	7c c0       	rjmp	.+248    	; 0x23a <__bad_interrupt>
+ 142:	00 00       	nop
+ 144:	7a c0       	rjmp	.+244    	; 0x23a <__bad_interrupt>
+ 146:	00 00       	nop
+ 148:	78 c0       	rjmp	.+240    	; 0x23a <__bad_interrupt>
+ 14a:	00 00       	nop
+ 14c:	76 c0       	rjmp	.+236    	; 0x23a <__bad_interrupt>
+ 14e:	00 00       	nop
+ 150:	74 c0       	rjmp	.+232    	; 0x23a <__bad_interrupt>
+ 152:	00 00       	nop
+ 154:	72 c0       	rjmp	.+228    	; 0x23a <__bad_interrupt>
+ 156:	00 00       	nop
+ 158:	70 c0       	rjmp	.+224    	; 0x23a <__bad_interrupt>
+ 15a:	00 00       	nop
+ 15c:	6e c0       	rjmp	.+220    	; 0x23a <__bad_interrupt>
+ 15e:	00 00       	nop
+ 160:	6c c0       	rjmp	.+216    	; 0x23a <__bad_interrupt>
+ 162:	00 00       	nop
+ 164:	6a c0       	rjmp	.+212    	; 0x23a <__bad_interrupt>
+ 166:	00 00       	nop
+ 168:	68 c0       	rjmp	.+208    	; 0x23a <__bad_interrupt>
+ 16a:	00 00       	nop
+ 16c:	66 c0       	rjmp	.+204    	; 0x23a <__bad_interrupt>
+ 16e:	00 00       	nop
+ 170:	64 c0       	rjmp	.+200    	; 0x23a <__bad_interrupt>
+ 172:	00 00       	nop
+ 174:	62 c0       	rjmp	.+196    	; 0x23a <__bad_interrupt>
+ 176:	00 00       	nop
+ 178:	60 c0       	rjmp	.+192    	; 0x23a <__bad_interrupt>
+ 17a:	00 00       	nop
+ 17c:	5e c0       	rjmp	.+188    	; 0x23a <__bad_interrupt>
+ 17e:	00 00       	nop
+ 180:	5c c0       	rjmp	.+184    	; 0x23a <__bad_interrupt>
+ 182:	00 00       	nop
+ 184:	5a c0       	rjmp	.+180    	; 0x23a <__bad_interrupt>
+ 186:	00 00       	nop
+ 188:	58 c0       	rjmp	.+176    	; 0x23a <__bad_interrupt>
+ 18a:	00 00       	nop
+ 18c:	56 c0       	rjmp	.+172    	; 0x23a <__bad_interrupt>
+ 18e:	00 00       	nop
+ 190:	54 c0       	rjmp	.+168    	; 0x23a <__bad_interrupt>
+ 192:	00 00       	nop
+ 194:	52 c0       	rjmp	.+164    	; 0x23a <__bad_interrupt>
+ 196:	00 00       	nop
+ 198:	50 c0       	rjmp	.+160    	; 0x23a <__bad_interrupt>
+ 19a:	00 00       	nop
+ 19c:	4e c0       	rjmp	.+156    	; 0x23a <__bad_interrupt>
+ 19e:	00 00       	nop
+ 1a0:	4c c0       	rjmp	.+152    	; 0x23a <__bad_interrupt>
+ 1a2:	00 00       	nop
+ 1a4:	4a c0       	rjmp	.+148    	; 0x23a <__bad_interrupt>
+ 1a6:	00 00       	nop
+ 1a8:	48 c0       	rjmp	.+144    	; 0x23a <__bad_interrupt>
+ 1aa:	00 00       	nop
+ 1ac:	46 c0       	rjmp	.+140    	; 0x23a <__bad_interrupt>
+ 1ae:	00 00       	nop
+ 1b0:	44 c0       	rjmp	.+136    	; 0x23a <__bad_interrupt>
+ 1b2:	00 00       	nop
+ 1b4:	42 c0       	rjmp	.+132    	; 0x23a <__bad_interrupt>
+ 1b6:	00 00       	nop
+ 1b8:	40 c0       	rjmp	.+128    	; 0x23a <__bad_interrupt>
+ 1ba:	00 00       	nop
+ 1bc:	3e c0       	rjmp	.+124    	; 0x23a <__bad_interrupt>
+ 1be:	00 00       	nop
+ 1c0:	3c c0       	rjmp	.+120    	; 0x23a <__bad_interrupt>
+ 1c2:	00 00       	nop
+ 1c4:	3a c0       	rjmp	.+116    	; 0x23a <__bad_interrupt>
+ 1c6:	00 00       	nop
+ 1c8:	38 c0       	rjmp	.+112    	; 0x23a <__bad_interrupt>
+ 1ca:	00 00       	nop
+ 1cc:	36 c0       	rjmp	.+108    	; 0x23a <__bad_interrupt>
+ 1ce:	00 00       	nop
+ 1d0:	34 c0       	rjmp	.+104    	; 0x23a <__bad_interrupt>
+ 1d2:	00 00       	nop
+ 1d4:	32 c0       	rjmp	.+100    	; 0x23a <__bad_interrupt>
+ 1d6:	00 00       	nop
+ 1d8:	30 c0       	rjmp	.+96     	; 0x23a <__bad_interrupt>
+ 1da:	00 00       	nop
+ 1dc:	2e c0       	rjmp	.+92     	; 0x23a <__bad_interrupt>
+ 1de:	00 00       	nop
+ 1e0:	2c c0       	rjmp	.+88     	; 0x23a <__bad_interrupt>
+ 1e2:	00 00       	nop
+ 1e4:	2a c0       	rjmp	.+84     	; 0x23a <__bad_interrupt>
+ 1e6:	00 00       	nop
+ 1e8:	28 c0       	rjmp	.+80     	; 0x23a <__bad_interrupt>
+ 1ea:	00 00       	nop
+ 1ec:	26 c0       	rjmp	.+76     	; 0x23a <__bad_interrupt>
+ 1ee:	00 00       	nop
+ 1f0:	24 c0       	rjmp	.+72     	; 0x23a <__bad_interrupt>
+ 1f2:	00 00       	nop
+ 1f4:	22 c0       	rjmp	.+68     	; 0x23a <__bad_interrupt>
+ 1f6:	00 00       	nop
+ 1f8:	20 c0       	rjmp	.+64     	; 0x23a <__bad_interrupt>
+	...
+
+000001fc <__ctors_end>:
+ 1fc:	11 24       	eor	r1, r1
+ 1fe:	1f be       	out	0x3f, r1	; 63
+ 200:	cf ef       	ldi	r28, 0xFF	; 255
+ 202:	cd bf       	out	0x3d, r28	; 61
+ 204:	df e5       	ldi	r29, 0x5F	; 95
+ 206:	de bf       	out	0x3e, r29	; 62
+ 208:	00 e0       	ldi	r16, 0x00	; 0
+ 20a:	0c bf       	out	0x3c, r16	; 60
+
+0000020c <__do_copy_data>:
+ 20c:	11 e2       	ldi	r17, 0x21	; 33
+ 20e:	a0 e0       	ldi	r26, 0x00	; 0
+ 210:	b0 e2       	ldi	r27, 0x20	; 32
+ 212:	e8 e5       	ldi	r30, 0x58	; 88
+ 214:	f8 e0       	ldi	r31, 0x08	; 8
+ 216:	00 e0       	ldi	r16, 0x00	; 0
+ 218:	0b bf       	out	0x3b, r16	; 59
+ 21a:	02 c0       	rjmp	.+4      	; 0x220 <__do_copy_data+0x14>
+ 21c:	07 90       	elpm	r0, Z+
+ 21e:	0d 92       	st	X+, r0
+ 220:	a8 32       	cpi	r26, 0x28	; 40
+ 222:	b1 07       	cpc	r27, r17
+ 224:	d9 f7       	brne	.-10     	; 0x21c <__do_copy_data+0x10>
+
+00000226 <__do_clear_bss>:
+ 226:	21 e2       	ldi	r18, 0x21	; 33
+ 228:	a8 e2       	ldi	r26, 0x28	; 40
+ 22a:	b1 e2       	ldi	r27, 0x21	; 33
+ 22c:	01 c0       	rjmp	.+2      	; 0x230 <.do_clear_bss_start>
+
+0000022e <.do_clear_bss_loop>:
+ 22e:	1d 92       	st	X+, r1
+
+00000230 <.do_clear_bss_start>:
+ 230:	a8 33       	cpi	r26, 0x38	; 56
+ 232:	b2 07       	cpc	r27, r18
+ 234:	e1 f7       	brne	.-8      	; 0x22e <.do_clear_bss_loop>
+ 236:	dc d2       	rcall	.+1464   	; 0x7f0 <main>
+ 238:	0d c3       	rjmp	.+1562   	; 0x854 <_exit>
+
+0000023a <__bad_interrupt>:
+ 23a:	e2 ce       	rjmp	.-572    	; 0x0 <__vectors>
+
+0000023c <int_to_char>:
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 23c:	2d ec       	ldi	r18, 0xCD	; 205
+ 23e:	82 9f       	mul	r24, r18
+ 240:	91 2d       	mov	r25, r1
+ 242:	11 24       	eor	r1, r1
+ 244:	96 95       	lsr	r25
+ 246:	96 95       	lsr	r25
+ 248:	96 95       	lsr	r25
+ 24a:	92 9f       	mul	r25, r18
+ 24c:	21 2d       	mov	r18, r1
+ 24e:	11 24       	eor	r1, r1
+ 250:	26 95       	lsr	r18
+ 252:	26 95       	lsr	r18
+ 254:	26 95       	lsr	r18
+ 256:	20 63       	ori	r18, 0x30	; 48
+ 258:	20 93 a0 08 	sts	0x08A0, r18
+ 25c:	2f ef       	ldi	r18, 0xFF	; 255
+ 25e:	33 ec       	ldi	r19, 0xC3	; 195
+ 260:	49 e0       	ldi	r20, 0x09	; 9
+ 262:	21 50       	subi	r18, 0x01	; 1
+ 264:	30 40       	sbci	r19, 0x00	; 0
+ 266:	40 40       	sbci	r20, 0x00	; 0
+ 268:	e1 f7       	brne	.-8      	; 0x262 <int_to_char+0x26>
+ 26a:	00 c0       	rjmp	.+0      	; 0x26c <int_to_char+0x30>
+ 26c:	00 00       	nop
+ 26e:	2d ec       	ldi	r18, 0xCD	; 205
+ 270:	92 9f       	mul	r25, r18
+ 272:	21 2d       	mov	r18, r1
+ 274:	11 24       	eor	r1, r1
+ 276:	26 95       	lsr	r18
+ 278:	26 95       	lsr	r18
+ 27a:	26 95       	lsr	r18
+ 27c:	22 0f       	add	r18, r18
+ 27e:	32 2f       	mov	r19, r18
+ 280:	33 0f       	add	r19, r19
+ 282:	33 0f       	add	r19, r19
+ 284:	23 0f       	add	r18, r19
+ 286:	92 1b       	sub	r25, r18
+ 288:	90 63       	ori	r25, 0x30	; 48
+ 28a:	90 93 a0 08 	sts	0x08A0, r25
+ 28e:	9f ef       	ldi	r25, 0xFF	; 255
+ 290:	23 ec       	ldi	r18, 0xC3	; 195
+ 292:	39 e0       	ldi	r19, 0x09	; 9
+ 294:	91 50       	subi	r25, 0x01	; 1
+ 296:	20 40       	sbci	r18, 0x00	; 0
+ 298:	30 40       	sbci	r19, 0x00	; 0
+ 29a:	e1 f7       	brne	.-8      	; 0x294 <int_to_char+0x58>
+ 29c:	00 c0       	rjmp	.+0      	; 0x29e <int_to_char+0x62>
+ 29e:	00 00       	nop
+ 2a0:	9d ec       	ldi	r25, 0xCD	; 205
+ 2a2:	89 9f       	mul	r24, r25
+ 2a4:	91 2d       	mov	r25, r1
+ 2a6:	11 24       	eor	r1, r1
+ 2a8:	96 95       	lsr	r25
+ 2aa:	96 95       	lsr	r25
+ 2ac:	96 95       	lsr	r25
+ 2ae:	99 0f       	add	r25, r25
+ 2b0:	29 2f       	mov	r18, r25
+ 2b2:	22 0f       	add	r18, r18
+ 2b4:	22 0f       	add	r18, r18
+ 2b6:	92 0f       	add	r25, r18
+ 2b8:	89 1b       	sub	r24, r25
+ 2ba:	80 63       	ori	r24, 0x30	; 48
+ 2bc:	80 93 a0 08 	sts	0x08A0, r24
+ 2c0:	4f ef       	ldi	r20, 0xFF	; 255
+ 2c2:	83 ec       	ldi	r24, 0xC3	; 195
+ 2c4:	99 e0       	ldi	r25, 0x09	; 9
+ 2c6:	41 50       	subi	r20, 0x01	; 1
+ 2c8:	80 40       	sbci	r24, 0x00	; 0
+ 2ca:	90 40       	sbci	r25, 0x00	; 0
+ 2cc:	e1 f7       	brne	.-8      	; 0x2c6 <int_to_char+0x8a>
+ 2ce:	00 c0       	rjmp	.+0      	; 0x2d0 <int_to_char+0x94>
+ 2d0:	00 00       	nop
+ 2d2:	8d e0       	ldi	r24, 0x0D	; 13
+ 2d4:	80 93 a0 08 	sts	0x08A0, r24
+ 2d8:	2f ef       	ldi	r18, 0xFF	; 255
+ 2da:	33 ec       	ldi	r19, 0xC3	; 195
+ 2dc:	49 e0       	ldi	r20, 0x09	; 9
+ 2de:	21 50       	subi	r18, 0x01	; 1
+ 2e0:	30 40       	sbci	r19, 0x00	; 0
+ 2e2:	40 40       	sbci	r20, 0x00	; 0
+ 2e4:	e1 f7       	brne	.-8      	; 0x2de <int_to_char+0xa2>
+ 2e6:	00 c0       	rjmp	.+0      	; 0x2e8 <int_to_char+0xac>
+ 2e8:	00 00       	nop
+ 2ea:	8a e0       	ldi	r24, 0x0A	; 10
+ 2ec:	80 93 a0 08 	sts	0x08A0, r24
+ 2f0:	8f ef       	ldi	r24, 0xFF	; 255
+ 2f2:	93 ec       	ldi	r25, 0xC3	; 195
+ 2f4:	29 e0       	ldi	r18, 0x09	; 9
+ 2f6:	81 50       	subi	r24, 0x01	; 1
+ 2f8:	90 40       	sbci	r25, 0x00	; 0
+ 2fa:	20 40       	sbci	r18, 0x00	; 0
+ 2fc:	e1 f7       	brne	.-8      	; 0x2f6 <int_to_char+0xba>
+ 2fe:	00 c0       	rjmp	.+0      	; 0x300 <int_to_char+0xc4>
+ 300:	00 00       	nop
+ 302:	08 95       	ret
+
+00000304 <Set_Clk_32MHz>:
+ 304:	e0 e5       	ldi	r30, 0x50	; 80
+ 306:	f0 e0       	ldi	r31, 0x00	; 0
+ 308:	80 81       	ld	r24, Z
+ 30a:	82 60       	ori	r24, 0x02	; 2
+ 30c:	80 83       	st	Z, r24
+ 30e:	e1 e5       	ldi	r30, 0x51	; 81
+ 310:	f0 e0       	ldi	r31, 0x00	; 0
+ 312:	80 81       	ld	r24, Z
+ 314:	81 ff       	sbrs	r24, 1
+ 316:	fd cf       	rjmp	.-6      	; 0x312 <Set_Clk_32MHz+0xe>
+ 318:	88 ed       	ldi	r24, 0xD8	; 216
+ 31a:	84 bf       	out	0x34, r24	; 52
+ 31c:	81 e0       	ldi	r24, 0x01	; 1
+ 31e:	80 93 40 00 	sts	0x0040, r24
+ 322:	08 95       	ret
+
+00000324 <uart_init>:
+ 324:	88 e0       	ldi	r24, 0x08	; 8
+ 326:	80 93 45 06 	sts	0x0645, r24
+ 32a:	80 93 41 06 	sts	0x0641, r24
+ 32e:	9f ec       	ldi	r25, 0xCF	; 207
+ 330:	90 93 a6 08 	sts	0x08A6, r25
+ 334:	10 92 a7 08 	sts	0x08A7, r1
+ 338:	10 92 a3 08 	sts	0x08A3, r1
+ 33c:	93 e0       	ldi	r25, 0x03	; 3
+ 33e:	90 93 a5 08 	sts	0x08A5, r25
+ 342:	80 93 a4 08 	sts	0x08A4, r24
+ 346:	08 95       	ret
+
+00000348 <send_string>:
+62 code for sending a string
+63 **************************************************/
+void send_string(char *str)
+{ while(1)
+	{
+		if( *str == '\0' ) break;
+ 348:	fc 01       	movw	r30, r24
+ 34a:	20 81       	ld	r18, Z
+ 34c:	22 23       	and	r18, r18
+ 34e:	81 f0       	breq	.+32     	; 0x370 <send_string+0x28>
+ 350:	31 96       	adiw	r30, 0x01	; 1
+
+/***************************************************************************
+54 code for Sending a single char
+55 *************************************************************************/
+void send_char(char data)
+{ USARTC0_DATA = data;
+ 352:	a0 ea       	ldi	r26, 0xA0	; 160
+ 354:	b8 e0       	ldi	r27, 0x08	; 8
+ 356:	2c 93       	st	X, r18
+ 358:	2f ef       	ldi	r18, 0xFF	; 255
+ 35a:	83 ec       	ldi	r24, 0xC3	; 195
+ 35c:	99 e0       	ldi	r25, 0x09	; 9
+ 35e:	21 50       	subi	r18, 0x01	; 1
+ 360:	80 40       	sbci	r24, 0x00	; 0
+ 362:	90 40       	sbci	r25, 0x00	; 0
+ 364:	e1 f7       	brne	.-8      	; 0x35e <send_string+0x16>
+ 366:	00 c0       	rjmp	.+0      	; 0x368 <send_string+0x20>
+ 368:	00 00       	nop
+62 code for sending a string
+63 **************************************************/
+void send_string(char *str)
+{ while(1)
+	{
+		if( *str == '\0' ) break;
+ 36a:	21 91       	ld	r18, Z+
+ 36c:	21 11       	cpse	r18, r1
+ 36e:	f3 cf       	rjmp	.-26     	; 0x356 <send_string+0xe>
+ 370:	08 95       	ret
+
+00000372 <scan_keypad>:
+	
+}
+
+void scan_keypad(void)
+{
+	PORTE_OUT = 0x02;
+ 372:	e4 e8       	ldi	r30, 0x84	; 132
+ 374:	f6 e0       	ldi	r31, 0x06	; 6
+ 376:	82 e0       	ldi	r24, 0x02	; 2
+ 378:	80 83       	st	Z, r24
+	PORTD_DIR =0x00; // PORTD as input port
+ 37a:	10 92 60 06 	sts	0x0660, r1
+	// Scan A[1x2]
+	if ((PORTE_OUT == 0x02) && (PORTD_IN ==0x31)) // if 0th pin of PORTD is receiving logic high
+ 37e:	80 81       	ld	r24, Z
+ 380:	82 30       	cpi	r24, 0x02	; 2
+ 382:	d9 f4       	brne	.+54     	; 0x3ba <scan_keypad+0x48>
+ 384:	80 91 68 06 	lds	r24, 0x0668
+ 388:	81 33       	cpi	r24, 0x31	; 49
+ 38a:	b9 f4       	brne	.+46     	; 0x3ba <scan_keypad+0x48>
+	{
+		
+		send_string("2\r\n");
+ 38c:	8f e8       	ldi	r24, 0x8F	; 143
+ 38e:	90 e2       	ldi	r25, 0x20	; 32
+ 390:	db df       	rcall	.-74     	; 0x348 <send_string>
+		pwd[rx]='2';
+ 392:	80 91 2b 21 	lds	r24, 0x212B
+ 396:	e8 2f       	mov	r30, r24
+ 398:	f0 e0       	ldi	r31, 0x00	; 0
+ 39a:	e4 5d       	subi	r30, 0xD4	; 212
+ 39c:	fe 4d       	sbci	r31, 0xDE	; 222
+ 39e:	92 e3       	ldi	r25, 0x32	; 50
+ 3a0:	90 83       	st	Z, r25
+		rx++;
+ 3a2:	8f 5f       	subi	r24, 0xFF	; 255
+ 3a4:	80 93 2b 21 	sts	0x212B, r24
+ 3a8:	2f ef       	ldi	r18, 0xFF	; 255
+ 3aa:	87 ea       	ldi	r24, 0xA7	; 167
+ 3ac:	91 e6       	ldi	r25, 0x61	; 97
+ 3ae:	21 50       	subi	r18, 0x01	; 1
+ 3b0:	80 40       	sbci	r24, 0x00	; 0
+ 3b2:	90 40       	sbci	r25, 0x00	; 0
+ 3b4:	e1 f7       	brne	.-8      	; 0x3ae <scan_keypad+0x3c>
+ 3b6:	00 c0       	rjmp	.+0      	; 0x3b8 <scan_keypad+0x46>
+ 3b8:	00 00       	nop
+		_delay_ms(1000);
+	}
+	// Scan A[2x2]
+	if((PORTE_OUT == 0x02) && (PORTD_IN == 0x38))
+ 3ba:	80 91 84 06 	lds	r24, 0x0684
+ 3be:	82 30       	cpi	r24, 0x02	; 2
+ 3c0:	d9 f4       	brne	.+54     	; 0x3f8 <scan_keypad+0x86>
+ 3c2:	80 91 68 06 	lds	r24, 0x0668
+ 3c6:	88 33       	cpi	r24, 0x38	; 56
+ 3c8:	b9 f4       	brne	.+46     	; 0x3f8 <scan_keypad+0x86>
+	{
+		
+		send_string("5\r\n");
+ 3ca:	80 e0       	ldi	r24, 0x00	; 0
+ 3cc:	90 e2       	ldi	r25, 0x20	; 32
+ 3ce:	bc df       	rcall	.-136    	; 0x348 <send_string>
+		pwd[rx]='5';
+ 3d0:	80 91 2b 21 	lds	r24, 0x212B
+ 3d4:	e8 2f       	mov	r30, r24
+ 3d6:	f0 e0       	ldi	r31, 0x00	; 0
+ 3d8:	e4 5d       	subi	r30, 0xD4	; 212
+ 3da:	fe 4d       	sbci	r31, 0xDE	; 222
+ 3dc:	95 e3       	ldi	r25, 0x35	; 53
+ 3de:	90 83       	st	Z, r25
+		rx++;
+ 3e0:	8f 5f       	subi	r24, 0xFF	; 255
+ 3e2:	80 93 2b 21 	sts	0x212B, r24
+ 3e6:	2f ef       	ldi	r18, 0xFF	; 255
+ 3e8:	87 ea       	ldi	r24, 0xA7	; 167
+ 3ea:	91 e6       	ldi	r25, 0x61	; 97
+ 3ec:	21 50       	subi	r18, 0x01	; 1
+ 3ee:	80 40       	sbci	r24, 0x00	; 0
+ 3f0:	90 40       	sbci	r25, 0x00	; 0
+ 3f2:	e1 f7       	brne	.-8      	; 0x3ec <scan_keypad+0x7a>
+ 3f4:	00 c0       	rjmp	.+0      	; 0x3f6 <scan_keypad+0x84>
+ 3f6:	00 00       	nop
+		_delay_ms(1000);
+	}
+	// Scan A[3x2]
+	if((PORTE_OUT == 0x02) && (PORTD_IN == 0x34))
+ 3f8:	80 91 84 06 	lds	r24, 0x0684
+ 3fc:	82 30       	cpi	r24, 0x02	; 2
+ 3fe:	d9 f4       	brne	.+54     	; 0x436 <scan_keypad+0xc4>
+ 400:	80 91 68 06 	lds	r24, 0x0668
+ 404:	84 33       	cpi	r24, 0x34	; 52
+ 406:	b9 f4       	brne	.+46     	; 0x436 <scan_keypad+0xc4>
+	{
+		pwd[rx]='8';
+ 408:	80 91 2b 21 	lds	r24, 0x212B
+ 40c:	e8 2f       	mov	r30, r24
+ 40e:	f0 e0       	ldi	r31, 0x00	; 0
+ 410:	e4 5d       	subi	r30, 0xD4	; 212
+ 412:	fe 4d       	sbci	r31, 0xDE	; 222
+ 414:	98 e3       	ldi	r25, 0x38	; 56
+ 416:	90 83       	st	Z, r25
+		rx++;
+ 418:	8f 5f       	subi	r24, 0xFF	; 255
+ 41a:	80 93 2b 21 	sts	0x212B, r24
+		send_string("8\r\n");
+ 41e:	84 e0       	ldi	r24, 0x04	; 4
+ 420:	90 e2       	ldi	r25, 0x20	; 32
+ 422:	92 df       	rcall	.-220    	; 0x348 <send_string>
+ 424:	2f ef       	ldi	r18, 0xFF	; 255
+ 426:	87 ea       	ldi	r24, 0xA7	; 167
+ 428:	91 e6       	ldi	r25, 0x61	; 97
+ 42a:	21 50       	subi	r18, 0x01	; 1
+ 42c:	80 40       	sbci	r24, 0x00	; 0
+ 42e:	90 40       	sbci	r25, 0x00	; 0
+ 430:	e1 f7       	brne	.-8      	; 0x42a <scan_keypad+0xb8>
+ 432:	00 c0       	rjmp	.+0      	; 0x434 <scan_keypad+0xc2>
+ 434:	00 00       	nop
+		_delay_ms(1000);
+		//G:\RAHUL IMP_DATA\M.Tech_Project\My xmega usart running code\KAYPAD\KEYPAD\KEYPAD\KEYPAD.c 3
+	}
+	// Scan A[4x2]
+	if((PORTE_OUT == 0x02) && (PORTD_IN == 0x32))
+ 436:	80 91 84 06 	lds	r24, 0x0684
+ 43a:	82 30       	cpi	r24, 0x02	; 2
+ 43c:	d9 f4       	brne	.+54     	; 0x474 <scan_keypad+0x102>
+ 43e:	80 91 68 06 	lds	r24, 0x0668
+ 442:	82 33       	cpi	r24, 0x32	; 50
+ 444:	b9 f4       	brne	.+46     	; 0x474 <scan_keypad+0x102>
+	{
+		send_string("0\r\n");
+ 446:	88 e0       	ldi	r24, 0x08	; 8
+ 448:	90 e2       	ldi	r25, 0x20	; 32
+ 44a:	7e df       	rcall	.-260    	; 0x348 <send_string>
+		pwd[rx]='0';
+ 44c:	80 91 2b 21 	lds	r24, 0x212B
+ 450:	e8 2f       	mov	r30, r24
+ 452:	f0 e0       	ldi	r31, 0x00	; 0
+ 454:	e4 5d       	subi	r30, 0xD4	; 212
+ 456:	fe 4d       	sbci	r31, 0xDE	; 222
+ 458:	90 e3       	ldi	r25, 0x30	; 48
+ 45a:	90 83       	st	Z, r25
+		rx++;
+ 45c:	8f 5f       	subi	r24, 0xFF	; 255
+ 45e:	80 93 2b 21 	sts	0x212B, r24
+ 462:	2f ef       	ldi	r18, 0xFF	; 255
+ 464:	87 ea       	ldi	r24, 0xA7	; 167
+ 466:	91 e6       	ldi	r25, 0x61	; 97
+ 468:	21 50       	subi	r18, 0x01	; 1
+ 46a:	80 40       	sbci	r24, 0x00	; 0
+ 46c:	90 40       	sbci	r25, 0x00	; 0
+ 46e:	e1 f7       	brne	.-8      	; 0x468 <scan_keypad+0xf6>
+ 470:	00 c0       	rjmp	.+0      	; 0x472 <scan_keypad+0x100>
+ 472:	00 00       	nop
+		_delay_ms(1000);
+	}
+	
+	PORTE_OUT = 0x01;
+ 474:	e4 e8       	ldi	r30, 0x84	; 132
+ 476:	f6 e0       	ldi	r31, 0x06	; 6
+ 478:	81 e0       	ldi	r24, 0x01	; 1
+ 47a:	80 83       	st	Z, r24
+	PORTD_DIR =0x00; // PORTD as input port
+ 47c:	10 92 60 06 	sts	0x0660, r1
+	// Scan A[1x1]
+	if ((PORTE_OUT == 0x01) && (PORTD_IN == 0x31)) // if 0th pin of PORTD is receiving logic high
+ 480:	80 81       	ld	r24, Z
+ 482:	81 30       	cpi	r24, 0x01	; 1
+ 484:	d9 f4       	brne	.+54     	; 0x4bc <scan_keypad+0x14a>
+ 486:	80 91 68 06 	lds	r24, 0x0668
+ 48a:	81 33       	cpi	r24, 0x31	; 49
+ 48c:	b9 f4       	brne	.+46     	; 0x4bc <scan_keypad+0x14a>
+	{
+		send_string("1\r\n");
+ 48e:	81 e5       	ldi	r24, 0x51	; 81
+ 490:	90 e2       	ldi	r25, 0x20	; 32
+ 492:	5a df       	rcall	.-332    	; 0x348 <send_string>
+		pwd[rx]='1';
+ 494:	80 91 2b 21 	lds	r24, 0x212B
+ 498:	e8 2f       	mov	r30, r24
+ 49a:	f0 e0       	ldi	r31, 0x00	; 0
+ 49c:	e4 5d       	subi	r30, 0xD4	; 212
+ 49e:	fe 4d       	sbci	r31, 0xDE	; 222
+ 4a0:	91 e3       	ldi	r25, 0x31	; 49
+ 4a2:	90 83       	st	Z, r25
+		rx++;
+ 4a4:	8f 5f       	subi	r24, 0xFF	; 255
+ 4a6:	80 93 2b 21 	sts	0x212B, r24
+ 4aa:	2f ef       	ldi	r18, 0xFF	; 255
+ 4ac:	87 ea       	ldi	r24, 0xA7	; 167
+ 4ae:	91 e6       	ldi	r25, 0x61	; 97
+ 4b0:	21 50       	subi	r18, 0x01	; 1
+ 4b2:	80 40       	sbci	r24, 0x00	; 0
+ 4b4:	90 40       	sbci	r25, 0x00	; 0
+ 4b6:	e1 f7       	brne	.-8      	; 0x4b0 <scan_keypad+0x13e>
+ 4b8:	00 c0       	rjmp	.+0      	; 0x4ba <scan_keypad+0x148>
+ 4ba:	00 00       	nop
+		_delay_ms(1000);
+	}
+	// Scan A[2x1]
+	if((PORTE_OUT == 0x01) && (PORTD_IN == 0x38))
+ 4bc:	80 91 84 06 	lds	r24, 0x0684
+ 4c0:	81 30       	cpi	r24, 0x01	; 1
+ 4c2:	d9 f4       	brne	.+54     	; 0x4fa <scan_keypad+0x188>
+ 4c4:	80 91 68 06 	lds	r24, 0x0668
+ 4c8:	88 33       	cpi	r24, 0x38	; 56
+ 4ca:	b9 f4       	brne	.+46     	; 0x4fa <scan_keypad+0x188>
+	{
+		
+		pwd[rx]='4';
+ 4cc:	80 91 2b 21 	lds	r24, 0x212B
+ 4d0:	e8 2f       	mov	r30, r24
+ 4d2:	f0 e0       	ldi	r31, 0x00	; 0
+ 4d4:	e4 5d       	subi	r30, 0xD4	; 212
+ 4d6:	fe 4d       	sbci	r31, 0xDE	; 222
+ 4d8:	94 e3       	ldi	r25, 0x34	; 52
+ 4da:	90 83       	st	Z, r25
+		rx++;
+ 4dc:	8f 5f       	subi	r24, 0xFF	; 255
+ 4de:	80 93 2b 21 	sts	0x212B, r24
+		send_string("4\r\n");
+ 4e2:	8c e0       	ldi	r24, 0x0C	; 12
+ 4e4:	90 e2       	ldi	r25, 0x20	; 32
+ 4e6:	30 df       	rcall	.-416    	; 0x348 <send_string>
+ 4e8:	2f ef       	ldi	r18, 0xFF	; 255
+ 4ea:	87 ea       	ldi	r24, 0xA7	; 167
+ 4ec:	91 e6       	ldi	r25, 0x61	; 97
+ 4ee:	21 50       	subi	r18, 0x01	; 1
+ 4f0:	80 40       	sbci	r24, 0x00	; 0
+ 4f2:	90 40       	sbci	r25, 0x00	; 0
+ 4f4:	e1 f7       	brne	.-8      	; 0x4ee <scan_keypad+0x17c>
+ 4f6:	00 c0       	rjmp	.+0      	; 0x4f8 <scan_keypad+0x186>
+ 4f8:	00 00       	nop
+		_delay_ms(1000);
+	}
+	// Scan A[3x1]
+	if((PORTE_OUT == 0x01) && (PORTD_IN == 0x34))
+ 4fa:	80 91 84 06 	lds	r24, 0x0684
+ 4fe:	81 30       	cpi	r24, 0x01	; 1
+ 500:	d9 f4       	brne	.+54     	; 0x538 <scan_keypad+0x1c6>
+ 502:	80 91 68 06 	lds	r24, 0x0668
+ 506:	84 33       	cpi	r24, 0x34	; 52
+ 508:	b9 f4       	brne	.+46     	; 0x538 <scan_keypad+0x1c6>
+	{
+		
+		pwd[rx]='7';
+ 50a:	80 91 2b 21 	lds	r24, 0x212B
+ 50e:	e8 2f       	mov	r30, r24
+ 510:	f0 e0       	ldi	r31, 0x00	; 0
+ 512:	e4 5d       	subi	r30, 0xD4	; 212
+ 514:	fe 4d       	sbci	r31, 0xDE	; 222
+ 516:	97 e3       	ldi	r25, 0x37	; 55
+ 518:	90 83       	st	Z, r25
+		rx++;
+ 51a:	8f 5f       	subi	r24, 0xFF	; 255
+ 51c:	80 93 2b 21 	sts	0x212B, r24
+		send_string("7\r\n");
+ 520:	80 e1       	ldi	r24, 0x10	; 16
+ 522:	90 e2       	ldi	r25, 0x20	; 32
+ 524:	11 df       	rcall	.-478    	; 0x348 <send_string>
+ 526:	2f ef       	ldi	r18, 0xFF	; 255
+ 528:	87 ea       	ldi	r24, 0xA7	; 167
+ 52a:	91 e6       	ldi	r25, 0x61	; 97
+ 52c:	21 50       	subi	r18, 0x01	; 1
+ 52e:	80 40       	sbci	r24, 0x00	; 0
+ 530:	90 40       	sbci	r25, 0x00	; 0
+ 532:	e1 f7       	brne	.-8      	; 0x52c <scan_keypad+0x1ba>
+ 534:	00 c0       	rjmp	.+0      	; 0x536 <scan_keypad+0x1c4>
+ 536:	00 00       	nop
+		_delay_ms(1000);
+	}
+	// Scan A[4x1]
+	if((PORTE_OUT == 0x01) && (PORTD_IN == 0x32))
+ 538:	80 91 84 06 	lds	r24, 0x0684
+ 53c:	81 30       	cpi	r24, 0x01	; 1
+ 53e:	d9 f4       	brne	.+54     	; 0x576 <scan_keypad+0x204>
+ 540:	80 91 68 06 	lds	r24, 0x0668
+ 544:	82 33       	cpi	r24, 0x32	; 50
+ 546:	b9 f4       	brne	.+46     	; 0x576 <scan_keypad+0x204>
+	{
+		pwd[rx]='*';
+ 548:	80 91 2b 21 	lds	r24, 0x212B
+ 54c:	e8 2f       	mov	r30, r24
+ 54e:	f0 e0       	ldi	r31, 0x00	; 0
+ 550:	e4 5d       	subi	r30, 0xD4	; 212
+ 552:	fe 4d       	sbci	r31, 0xDE	; 222
+ 554:	9a e2       	ldi	r25, 0x2A	; 42
+ 556:	90 83       	st	Z, r25
+		rx++;
+ 558:	8f 5f       	subi	r24, 0xFF	; 255
+ 55a:	80 93 2b 21 	sts	0x212B, r24
+		send_string("*\r\n");
+ 55e:	84 e1       	ldi	r24, 0x14	; 20
+ 560:	90 e2       	ldi	r25, 0x20	; 32
+ 562:	f2 de       	rcall	.-540    	; 0x348 <send_string>
+ 564:	2f ef       	ldi	r18, 0xFF	; 255
+ 566:	87 ea       	ldi	r24, 0xA7	; 167
+ 568:	91 e6       	ldi	r25, 0x61	; 97
+ 56a:	21 50       	subi	r18, 0x01	; 1
+ 56c:	80 40       	sbci	r24, 0x00	; 0
+ 56e:	90 40       	sbci	r25, 0x00	; 0
+ 570:	e1 f7       	brne	.-8      	; 0x56a <scan_keypad+0x1f8>
+ 572:	00 c0       	rjmp	.+0      	; 0x574 <scan_keypad+0x202>
+ 574:	00 00       	nop
+		_delay_ms(1000);
+	}
+	
+	PORTE_OUT = 0x04;
+ 576:	e4 e8       	ldi	r30, 0x84	; 132
+ 578:	f6 e0       	ldi	r31, 0x06	; 6
+ 57a:	84 e0       	ldi	r24, 0x04	; 4
+ 57c:	80 83       	st	Z, r24
+	PORTD_DIR =0x00; // PORTD as input port
+ 57e:	10 92 60 06 	sts	0x0660, r1
+	// Scan A[1x3]
+	if ((PORTE_OUT == 0x04) &&(PORTD_IN ==0x31)) // if 0th pin of PORTD is receiving logic high
+ 582:	80 81       	ld	r24, Z
+ 584:	84 30       	cpi	r24, 0x04	; 4
+ 586:	d9 f4       	brne	.+54     	; 0x5be <scan_keypad+0x24c>
+ 588:	80 91 68 06 	lds	r24, 0x0668
+ 58c:	81 33       	cpi	r24, 0x31	; 49
+ 58e:	b9 f4       	brne	.+46     	; 0x5be <scan_keypad+0x24c>
+	{
+		pwd[rx]='3';
+ 590:	80 91 2b 21 	lds	r24, 0x212B
+ 594:	e8 2f       	mov	r30, r24
+ 596:	f0 e0       	ldi	r31, 0x00	; 0
+ 598:	e4 5d       	subi	r30, 0xD4	; 212
+ 59a:	fe 4d       	sbci	r31, 0xDE	; 222
+ 59c:	93 e3       	ldi	r25, 0x33	; 51
+ 59e:	90 83       	st	Z, r25
+		rx++;
+ 5a0:	8f 5f       	subi	r24, 0xFF	; 255
+ 5a2:	80 93 2b 21 	sts	0x212B, r24
+		send_string("3\r\n");
+ 5a6:	8f ea       	ldi	r24, 0xAF	; 175
+ 5a8:	90 e2       	ldi	r25, 0x20	; 32
+ 5aa:	ce de       	rcall	.-612    	; 0x348 <send_string>
+ 5ac:	2f ef       	ldi	r18, 0xFF	; 255
+ 5ae:	87 ea       	ldi	r24, 0xA7	; 167
+ 5b0:	91 e6       	ldi	r25, 0x61	; 97
+ 5b2:	21 50       	subi	r18, 0x01	; 1
+ 5b4:	80 40       	sbci	r24, 0x00	; 0
+ 5b6:	90 40       	sbci	r25, 0x00	; 0
+ 5b8:	e1 f7       	brne	.-8      	; 0x5b2 <scan_keypad+0x240>
+ 5ba:	00 c0       	rjmp	.+0      	; 0x5bc <scan_keypad+0x24a>
+ 5bc:	00 00       	nop
+		_delay_ms(1000);
+	}
+	// Scan A[2x3]
+	if((PORTE_OUT == 0x04) && (PORTD_IN == 0x38))
+ 5be:	80 91 84 06 	lds	r24, 0x0684
+ 5c2:	84 30       	cpi	r24, 0x04	; 4
+ 5c4:	d9 f4       	brne	.+54     	; 0x5fc <scan_keypad+0x28a>
+ 5c6:	80 91 68 06 	lds	r24, 0x0668
+ 5ca:	88 33       	cpi	r24, 0x38	; 56
+ 5cc:	b9 f4       	brne	.+46     	; 0x5fc <scan_keypad+0x28a>
+	{
+		pwd[rx]='6';
+ 5ce:	80 91 2b 21 	lds	r24, 0x212B
+ 5d2:	e8 2f       	mov	r30, r24
+ 5d4:	f0 e0       	ldi	r31, 0x00	; 0
+ 5d6:	e4 5d       	subi	r30, 0xD4	; 212
+ 5d8:	fe 4d       	sbci	r31, 0xDE	; 222
+ 5da:	96 e3       	ldi	r25, 0x36	; 54
+ 5dc:	90 83       	st	Z, r25
+		rx++;
+ 5de:	8f 5f       	subi	r24, 0xFF	; 255
+ 5e0:	80 93 2b 21 	sts	0x212B, r24
+		send_string("6\r\n");
+ 5e4:	88 e1       	ldi	r24, 0x18	; 24
+ 5e6:	90 e2       	ldi	r25, 0x20	; 32
+ 5e8:	af de       	rcall	.-674    	; 0x348 <send_string>
+ 5ea:	2f ef       	ldi	r18, 0xFF	; 255
+ 5ec:	87 ea       	ldi	r24, 0xA7	; 167
+ 5ee:	91 e6       	ldi	r25, 0x61	; 97
+ 5f0:	21 50       	subi	r18, 0x01	; 1
+ 5f2:	80 40       	sbci	r24, 0x00	; 0
+ 5f4:	90 40       	sbci	r25, 0x00	; 0
+ 5f6:	e1 f7       	brne	.-8      	; 0x5f0 <scan_keypad+0x27e>
+ 5f8:	00 c0       	rjmp	.+0      	; 0x5fa <scan_keypad+0x288>
+ 5fa:	00 00       	nop
+		_delay_ms(1000);
+	}
+	// Scan A[3x3]
+	if((PORTE_OUT == 0x04) && (PORTD_IN == 0x34))
+ 5fc:	80 91 84 06 	lds	r24, 0x0684
+ 600:	84 30       	cpi	r24, 0x04	; 4
+ 602:	d9 f4       	brne	.+54     	; 0x63a <scan_keypad+0x2c8>
+ 604:	80 91 68 06 	lds	r24, 0x0668
+ 608:	84 33       	cpi	r24, 0x34	; 52
+ 60a:	b9 f4       	brne	.+46     	; 0x63a <scan_keypad+0x2c8>
+	{
+		pwd[rx]='9';
+ 60c:	80 91 2b 21 	lds	r24, 0x212B
+ 610:	e8 2f       	mov	r30, r24
+ 612:	f0 e0       	ldi	r31, 0x00	; 0
+ 614:	e4 5d       	subi	r30, 0xD4	; 212
+ 616:	fe 4d       	sbci	r31, 0xDE	; 222
+ 618:	99 e3       	ldi	r25, 0x39	; 57
+ 61a:	90 83       	st	Z, r25
+		rx++;
+ 61c:	8f 5f       	subi	r24, 0xFF	; 255
+ 61e:	80 93 2b 21 	sts	0x212B, r24
+		send_string("9\r\n");
+ 622:	8c e1       	ldi	r24, 0x1C	; 28
+ 624:	90 e2       	ldi	r25, 0x20	; 32
+ 626:	90 de       	rcall	.-736    	; 0x348 <send_string>
+ 628:	2f ef       	ldi	r18, 0xFF	; 255
+ 62a:	87 ea       	ldi	r24, 0xA7	; 167
+ 62c:	91 e6       	ldi	r25, 0x61	; 97
+ 62e:	21 50       	subi	r18, 0x01	; 1
+ 630:	80 40       	sbci	r24, 0x00	; 0
+ 632:	90 40       	sbci	r25, 0x00	; 0
+ 634:	e1 f7       	brne	.-8      	; 0x62e <scan_keypad+0x2bc>
+ 636:	00 c0       	rjmp	.+0      	; 0x638 <scan_keypad+0x2c6>
+ 638:	00 00       	nop
+		_delay_ms(1000);
+	}
+	//G:\RAHUL IMP_DATA\M.Tech_Project\My xmega usart running code\KAYPAD\KEYPAD\KEYPAD\KEYPAD.c 4
+	// Scan A[4x3]
+	if((PORTE_OUT == 0x04) && (PORTD_IN == 0x32))
+ 63a:	80 91 84 06 	lds	r24, 0x0684
+ 63e:	84 30       	cpi	r24, 0x04	; 4
+ 640:	d9 f4       	brne	.+54     	; 0x678 <scan_keypad+0x306>
+ 642:	80 91 68 06 	lds	r24, 0x0668
+ 646:	82 33       	cpi	r24, 0x32	; 50
+ 648:	b9 f4       	brne	.+46     	; 0x678 <scan_keypad+0x306>
+	{
+		send_string("#\r\n");
+ 64a:	80 e2       	ldi	r24, 0x20	; 32
+ 64c:	90 e2       	ldi	r25, 0x20	; 32
+ 64e:	7c de       	rcall	.-776    	; 0x348 <send_string>
+		pwd[rx]='#';
+ 650:	80 91 2b 21 	lds	r24, 0x212B
+ 654:	e8 2f       	mov	r30, r24
+ 656:	f0 e0       	ldi	r31, 0x00	; 0
+ 658:	e4 5d       	subi	r30, 0xD4	; 212
+ 65a:	fe 4d       	sbci	r31, 0xDE	; 222
+ 65c:	93 e2       	ldi	r25, 0x23	; 35
+ 65e:	90 83       	st	Z, r25
+		rx++;
+ 660:	8f 5f       	subi	r24, 0xFF	; 255
+ 662:	80 93 2b 21 	sts	0x212B, r24
+ 666:	2f ef       	ldi	r18, 0xFF	; 255
+ 668:	87 ea       	ldi	r24, 0xA7	; 167
+ 66a:	91 e6       	ldi	r25, 0x61	; 97
+ 66c:	21 50       	subi	r18, 0x01	; 1
+ 66e:	80 40       	sbci	r24, 0x00	; 0
+ 670:	90 40       	sbci	r25, 0x00	; 0
+ 672:	e1 f7       	brne	.-8      	; 0x66c <scan_keypad+0x2fa>
+ 674:	00 c0       	rjmp	.+0      	; 0x676 <scan_keypad+0x304>
+ 676:	00 00       	nop
+ 678:	08 95       	ret
+
+0000067a <Password>:
+
+//G:\RAHUL IMP_DATA\M.Tech_Project\My xmega usart running code\KAYPAD\KEYPAD\KEYPAD\KEYPAD.c 2
+
+void Password(void)
+{
+	send_string("Enter Password\r\n");
+ 67a:	84 e2       	ldi	r24, 0x24	; 36
+ 67c:	90 e2       	ldi	r25, 0x20	; 32
+ 67e:	64 de       	rcall	.-824    	; 0x348 <send_string>
+	
+	while(rx <=11)
+ 680:	80 91 2b 21 	lds	r24, 0x212B
+ 684:	8c 30       	cpi	r24, 0x0C	; 12
+ 686:	08 f0       	brcs	.+2      	; 0x68a <Password+0x10>
+ 688:	ad c0       	rjmp	.+346    	; 0x7e4 <Password+0x16a>
+	{
+		scan_keypad();
+ 68a:	73 de       	rcall	.-794    	; 0x372 <scan_keypad>
+
+void Password(void)
+{
+	send_string("Enter Password\r\n");
+	
+	while(rx <=11)
+ 68c:	80 91 2b 21 	lds	r24, 0x212B
+ 690:	8c 30       	cpi	r24, 0x0C	; 12
+ 692:	d8 f3       	brcs	.-10     	; 0x68a <Password+0x10>
+	{
+		scan_keypad();
+	}
+	for(rx=0;rx<=11;rx++)
+ 694:	10 92 2b 21 	sts	0x212B, r1
+ 698:	a7 c0       	rjmp	.+334    	; 0x7e8 <Password+0x16e>
+	{
+	send_char(pwd[rx]);
+ 69a:	f0 e0       	ldi	r31, 0x00	; 0
+ 69c:	e4 5d       	subi	r30, 0xD4	; 212
+ 69e:	fe 4d       	sbci	r31, 0xDE	; 222
+ 6a0:	80 81       	ld	r24, Z
+
+/***************************************************************************
+54 code for Sending a single char
+55 *************************************************************************/
+void send_char(char data)
+{ USARTC0_DATA = data;
+ 6a2:	8c 93       	st	X, r24
+ 6a4:	2f ef       	ldi	r18, 0xFF	; 255
+ 6a6:	83 ec       	ldi	r24, 0xC3	; 195
+ 6a8:	99 e0       	ldi	r25, 0x09	; 9
+ 6aa:	21 50       	subi	r18, 0x01	; 1
+ 6ac:	80 40       	sbci	r24, 0x00	; 0
+ 6ae:	90 40       	sbci	r25, 0x00	; 0
+ 6b0:	e1 f7       	brne	.-8      	; 0x6aa <Password+0x30>
+ 6b2:	00 c0       	rjmp	.+0      	; 0x6b4 <Password+0x3a>
+ 6b4:	00 00       	nop
+	
+	while(rx <=11)
+	{
+		scan_keypad();
+	}
+	for(rx=0;rx<=11;rx++)
+ 6b6:	e0 91 2b 21 	lds	r30, 0x212B
+ 6ba:	ef 5f       	subi	r30, 0xFF	; 255
+ 6bc:	e0 93 2b 21 	sts	0x212B, r30
+ 6c0:	ec 30       	cpi	r30, 0x0C	; 12
+ 6c2:	58 f3       	brcs	.-42     	; 0x69a <Password+0x20>
+
+/***************************************************************************
+54 code for Sending a single char
+55 *************************************************************************/
+void send_char(char data)
+{ USARTC0_DATA = data;
+ 6c4:	8d e0       	ldi	r24, 0x0D	; 13
+ 6c6:	80 93 a0 08 	sts	0x08A0, r24
+ 6ca:	2f ef       	ldi	r18, 0xFF	; 255
+ 6cc:	83 ec       	ldi	r24, 0xC3	; 195
+ 6ce:	99 e0       	ldi	r25, 0x09	; 9
+ 6d0:	21 50       	subi	r18, 0x01	; 1
+ 6d2:	80 40       	sbci	r24, 0x00	; 0
+ 6d4:	90 40       	sbci	r25, 0x00	; 0
+ 6d6:	e1 f7       	brne	.-8      	; 0x6d0 <Password+0x56>
+ 6d8:	00 c0       	rjmp	.+0      	; 0x6da <Password+0x60>
+ 6da:	00 00       	nop
+ 6dc:	8a e0       	ldi	r24, 0x0A	; 10
+ 6de:	80 93 a0 08 	sts	0x08A0, r24
+ 6e2:	2f ef       	ldi	r18, 0xFF	; 255
+ 6e4:	83 ec       	ldi	r24, 0xC3	; 195
+ 6e6:	99 e0       	ldi	r25, 0x09	; 9
+ 6e8:	21 50       	subi	r18, 0x01	; 1
+ 6ea:	80 40       	sbci	r24, 0x00	; 0
+ 6ec:	90 40       	sbci	r25, 0x00	; 0
+ 6ee:	e1 f7       	brne	.-8      	; 0x6e8 <Password+0x6e>
+ 6f0:	00 c0       	rjmp	.+0      	; 0x6f2 <Password+0x78>
+ 6f2:	00 00       	nop
+	{
+	send_char(pwd[rx]);
+	}
+	send_char('\r');
+	send_char('\n');
+	if ((pwd[1]=='1') && (pwd[3]=='2') && (pwd[5]=='3') && (pwd[7]=='4'))
+ 6f4:	80 91 2d 21 	lds	r24, 0x212D
+ 6f8:	81 33       	cpi	r24, 0x31	; 49
+ 6fa:	f9 f4       	brne	.+62     	; 0x73a <Password+0xc0>
+ 6fc:	90 91 2f 21 	lds	r25, 0x212F
+ 700:	92 33       	cpi	r25, 0x32	; 50
+ 702:	d9 f4       	brne	.+54     	; 0x73a <Password+0xc0>
+ 704:	90 91 31 21 	lds	r25, 0x2131
+ 708:	93 33       	cpi	r25, 0x33	; 51
+ 70a:	b9 f4       	brne	.+46     	; 0x73a <Password+0xc0>
+ 70c:	90 91 33 21 	lds	r25, 0x2133
+ 710:	94 33       	cpi	r25, 0x34	; 52
+ 712:	99 f4       	brne	.+38     	; 0x73a <Password+0xc0>
+	{
+		send_string("Password matched for person_1\r\n");
+ 714:	85 e3       	ldi	r24, 0x35	; 53
+ 716:	90 e2       	ldi	r25, 0x20	; 32
+ 718:	17 de       	rcall	.-978    	; 0x348 <send_string>
+		send_string("PRAVEEN BORN TO ROCK\r\n");
+ 71a:	85 e5       	ldi	r24, 0x55	; 85
+ 71c:	90 e2       	ldi	r25, 0x20	; 32
+ 71e:	14 de       	rcall	.-984    	; 0x348 <send_string>
+		send_string("BENZ\r\n");
+ 720:	8c e6       	ldi	r24, 0x6C	; 108
+ 722:	90 e2       	ldi	r25, 0x20	; 32
+ 724:	11 de       	rcall	.-990    	; 0x348 <send_string>
+		rx=0;
+ 726:	10 92 2b 21 	sts	0x212B, r1
+		u1++;
+ 72a:	80 91 2a 21 	lds	r24, 0x212A
+ 72e:	8f 5f       	subi	r24, 0xFF	; 255
+ 730:	80 93 2a 21 	sts	0x212A, r24
+		int_to_char(u1);
+ 734:	83 dd       	rcall	.-1274   	; 0x23c <int_to_char>
+		Password();
+ 736:	a1 cf       	rjmp	.-190    	; 0x67a <Password>
+ 738:	08 95       	ret
+	}
+	else if ((pwd[0]=='2') && (pwd[2]=='3') && (pwd[4]=='4') && (pwd[6]=='5')&& (pwd[8]=='6') )
+ 73a:	90 91 2c 21 	lds	r25, 0x212C
+ 73e:	92 33       	cpi	r25, 0x32	; 50
+ 740:	09 f0       	breq	.+2      	; 0x744 <Password+0xca>
+ 742:	46 c0       	rjmp	.+140    	; 0x7d0 <Password+0x156>
+ 744:	90 91 2e 21 	lds	r25, 0x212E
+ 748:	93 33       	cpi	r25, 0x33	; 51
+ 74a:	f9 f4       	brne	.+62     	; 0x78a <Password+0x110>
+ 74c:	20 91 30 21 	lds	r18, 0x2130
+ 750:	24 33       	cpi	r18, 0x34	; 52
+ 752:	d9 f4       	brne	.+54     	; 0x78a <Password+0x110>
+ 754:	20 91 32 21 	lds	r18, 0x2132
+ 758:	25 33       	cpi	r18, 0x35	; 53
+ 75a:	b9 f4       	brne	.+46     	; 0x78a <Password+0x110>
+ 75c:	20 91 34 21 	lds	r18, 0x2134
+ 760:	26 33       	cpi	r18, 0x36	; 54
+ 762:	99 f4       	brne	.+38     	; 0x78a <Password+0x110>
+	{
+		send_string("Password Matched for Person_2\r\n");
+ 764:	83 e7       	ldi	r24, 0x73	; 115
+ 766:	90 e2       	ldi	r25, 0x20	; 32
+ 768:	ef dd       	rcall	.-1058   	; 0x348 <send_string>
+		send_string("PRAVEEN BORN TO ROCK\r\n");
+ 76a:	85 e5       	ldi	r24, 0x55	; 85
+ 76c:	90 e2       	ldi	r25, 0x20	; 32
+ 76e:	ec dd       	rcall	.-1064   	; 0x348 <send_string>
+		send_string("BENZ\r\n");
+ 770:	8c e6       	ldi	r24, 0x6C	; 108
+ 772:	90 e2       	ldi	r25, 0x20	; 32
+ 774:	e9 dd       	rcall	.-1070   	; 0x348 <send_string>
+		rx=0;
+ 776:	10 92 2b 21 	sts	0x212B, r1
+		u2++;
+ 77a:	80 91 29 21 	lds	r24, 0x2129
+ 77e:	8f 5f       	subi	r24, 0xFF	; 255
+ 780:	80 93 29 21 	sts	0x2129, r24
+		int_to_char(u2);
+ 784:	5b dd       	rcall	.-1354   	; 0x23c <int_to_char>
+		Password();
+ 786:	79 cf       	rjmp	.-270    	; 0x67a <Password>
+ 788:	08 95       	ret
+	}
+	else if ((pwd[0]=='2') && (pwd[1]=='3') && (pwd[2]=='4') && (pwd[3]=='5')&& (pwd[4]=='4') && (pwd[5]=='5'))
+ 78a:	83 33       	cpi	r24, 0x33	; 51
+ 78c:	09 f5       	brne	.+66     	; 0x7d0 <Password+0x156>
+ 78e:	94 33       	cpi	r25, 0x34	; 52
+ 790:	f9 f4       	brne	.+62     	; 0x7d0 <Password+0x156>
+ 792:	80 91 2f 21 	lds	r24, 0x212F
+ 796:	85 33       	cpi	r24, 0x35	; 53
+ 798:	d9 f4       	brne	.+54     	; 0x7d0 <Password+0x156>
+ 79a:	80 91 30 21 	lds	r24, 0x2130
+ 79e:	84 33       	cpi	r24, 0x34	; 52
+ 7a0:	b9 f4       	brne	.+46     	; 0x7d0 <Password+0x156>
+ 7a2:	80 91 31 21 	lds	r24, 0x2131
+ 7a6:	85 33       	cpi	r24, 0x35	; 53
+ 7a8:	99 f4       	brne	.+38     	; 0x7d0 <Password+0x156>
+	{
+		send_string("Password Matched for Person_3\r\n");
+ 7aa:	83 e9       	ldi	r24, 0x93	; 147
+ 7ac:	90 e2       	ldi	r25, 0x20	; 32
+ 7ae:	cc dd       	rcall	.-1128   	; 0x348 <send_string>
+		send_string("PRAVEEN BORN TO ROCK\r\n");
+ 7b0:	85 e5       	ldi	r24, 0x55	; 85
+ 7b2:	90 e2       	ldi	r25, 0x20	; 32
+ 7b4:	c9 dd       	rcall	.-1134   	; 0x348 <send_string>
+		send_string("BENZ\r\n");
+ 7b6:	8c e6       	ldi	r24, 0x6C	; 108
+ 7b8:	90 e2       	ldi	r25, 0x20	; 32
+ 7ba:	c6 dd       	rcall	.-1140   	; 0x348 <send_string>
+		rx=0;
+ 7bc:	10 92 2b 21 	sts	0x212B, r1
+		u3++;
+ 7c0:	80 91 28 21 	lds	r24, 0x2128
+ 7c4:	8f 5f       	subi	r24, 0xFF	; 255
+ 7c6:	80 93 28 21 	sts	0x2128, r24
+		int_to_char(u3);
+ 7ca:	38 dd       	rcall	.-1424   	; 0x23c <int_to_char>
+		Password();
+ 7cc:	56 cf       	rjmp	.-340    	; 0x67a <Password>
+ 7ce:	08 95       	ret
+	}
+	else
+	{
+		send_string("Password Didn't Matched\r\n");
+ 7d0:	83 eb       	ldi	r24, 0xB3	; 179
+ 7d2:	90 e2       	ldi	r25, 0x20	; 32
+ 7d4:	b9 dd       	rcall	.-1166   	; 0x348 <send_string>
+		send_string("Try Again!\n\r");
+ 7d6:	8d ec       	ldi	r24, 0xCD	; 205
+ 7d8:	90 e2       	ldi	r25, 0x20	; 32
+ 7da:	b6 dd       	rcall	.-1172   	; 0x348 <send_string>
+		rx=0;
+ 7dc:	10 92 2b 21 	sts	0x212B, r1
+		Password();
+ 7e0:	4c cf       	rjmp	.-360    	; 0x67a <Password>
+ 7e2:	08 95       	ret
+	
+	while(rx <=11)
+	{
+		scan_keypad();
+	}
+	for(rx=0;rx<=11;rx++)
+ 7e4:	10 92 2b 21 	sts	0x212B, r1
+
+
+//G:\RAHUL IMP_DATA\M.Tech_Project\My xmega usart running code\KAYPAD\KEYPAD\KEYPAD\KEYPAD.c 2
+
+void Password(void)
+{
+ 7e8:	e0 e0       	ldi	r30, 0x00	; 0
+
+/***************************************************************************
+54 code for Sending a single char
+55 *************************************************************************/
+void send_char(char data)
+{ USARTC0_DATA = data;
+ 7ea:	a0 ea       	ldi	r26, 0xA0	; 160
+ 7ec:	b8 e0       	ldi	r27, 0x08	; 8
+ 7ee:	55 cf       	rjmp	.-342    	; 0x69a <Password+0x20>
+
+000007f0 <main>:
+}
+
+int main(void)
+{
+	
+	PORTE_DIRSET=0x07; // PORTE as output port
+ 7f0:	87 e0       	ldi	r24, 0x07	; 7
+ 7f2:	80 93 81 06 	sts	0x0681, r24
+	PORTD_DIR =0x00; // PORTD as input port
+ 7f6:	10 92 60 06 	sts	0x0660, r1
+PORTB_DIR = 0x0F;//portb as input
+ 7fa:	8f e0       	ldi	r24, 0x0F	; 15
+ 7fc:	80 93 20 06 	sts	0x0620, r24
+PORTC_OUT = 0x01;
+ 800:	81 e0       	ldi	r24, 0x01	; 1
+ 802:	80 93 44 06 	sts	0x0644, r24
+	
+	Set_Clk_32MHz();
+ 806:	7e dd       	rcall	.-1284   	; 0x304 <Set_Clk_32MHz>
+	uart_init();
+ 808:	8d dd       	rcall	.-1254   	; 0x324 <uart_init>
+	send_string("testing keypad\r\n");
+ 80a:	8a ed       	ldi	r24, 0xDA	; 218
+ 80c:	90 e2       	ldi	r25, 0x20	; 32
+ 80e:	9c dd       	rcall	.-1224   	; 0x348 <send_string>
+	if(PORTE_IN = 0x38)
+ 810:	88 e3       	ldi	r24, 0x38	; 56
+ 812:	80 93 88 06 	sts	0x0688, r24
+	{
+		send_string("The user_1 entered=");
+ 816:	8b ee       	ldi	r24, 0xEB	; 235
+ 818:	90 e2       	ldi	r25, 0x20	; 32
+ 81a:	96 dd       	rcall	.-1236   	; 0x348 <send_string>
+		int_to_char(u1);
+ 81c:	80 91 2a 21 	lds	r24, 0x212A
+ 820:	0d dd       	rcall	.-1510   	; 0x23c <int_to_char>
+		send_string("\r\n");
+ 822:	81 e2       	ldi	r24, 0x21	; 33
+ 824:	90 e2       	ldi	r25, 0x20	; 32
+ 826:	90 dd       	rcall	.-1248   	; 0x348 <send_string>
+		send_string("The user_2 entered=");
+ 828:	8f ef       	ldi	r24, 0xFF	; 255
+ 82a:	90 e2       	ldi	r25, 0x20	; 32
+ 82c:	8d dd       	rcall	.-1254   	; 0x348 <send_string>
+		int_to_char(u2);
+ 82e:	80 91 29 21 	lds	r24, 0x2129
+ 832:	04 dd       	rcall	.-1528   	; 0x23c <int_to_char>
+		send_string("\r\n");
+ 834:	81 e2       	ldi	r24, 0x21	; 33
+ 836:	90 e2       	ldi	r25, 0x20	; 32
+ 838:	87 dd       	rcall	.-1266   	; 0x348 <send_string>
+		send_string("The user_3 entered=");
+ 83a:	83 e1       	ldi	r24, 0x13	; 19
+ 83c:	91 e2       	ldi	r25, 0x21	; 33
+ 83e:	84 dd       	rcall	.-1272   	; 0x348 <send_string>
+		int_to_char(u3);
+ 840:	80 91 28 21 	lds	r24, 0x2128
+ 844:	fb dc       	rcall	.-1546   	; 0x23c <int_to_char>
+		send_string("\r\n");
+ 846:	81 e2       	ldi	r24, 0x21	; 33
+ 848:	90 e2       	ldi	r25, 0x20	; 32
+ 84a:	7e dd       	rcall	.-1284   	; 0x348 <send_string>
+		Password();
+ 84c:	16 df       	rcall	.-468    	; 0x67a <Password>
+	}
+	else
+	Password();
+	
+	
+}
+ 84e:	80 e0       	ldi	r24, 0x00	; 0
+ 850:	90 e0       	ldi	r25, 0x00	; 0
+ 852:	08 95       	ret
+
+00000854 <_exit>:
+ 854:	f8 94       	cli
+
+00000856 <__stop_program>:
+ 856:	ff cf       	rjmp	.-2      	; 0x856 <__stop_program>

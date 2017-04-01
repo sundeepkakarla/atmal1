@@ -1,0 +1,772 @@
+Archive member included because of file (symbol)
+
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega6\libgcc.a(_exit.o)
+                              c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avrxmega6/crtx256a3bu.o (exit)
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega6\libgcc.a(_copy_data.o)
+                              finalcom.o (__do_copy_data)
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega6\libgcc.a(_clear_bss.o)
+                              finalcom.o (__do_clear_bss)
+
+Allocating common symbols
+Common symbol       size              file
+
+fp                  0x14              finalcom.o
+temp                0x1               finalcom.o
+pwd                 0x3               finalcom.o
+dummy               0x1               finalcom.o
+str                 0x4               finalcom.o
+rec                 0x1               finalcom.o
+
+Discarded input sections
+
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avrxmega6/crtx256a3bu.o
+ .text          0x00000000        0x0 finalcom.o
+ .bss           0x00000000        0x0 finalcom.o
+ .bss.s         0x00000000        0x1 finalcom.o
+ .bss.j         0x00000000        0x1 finalcom.o
+ .bss.u1        0x00000000        0x1 finalcom.o
+ .text          0x00000000        0x0 gfx_library/gfx_mono_c12832_a1z.o
+ .bss           0x00000000        0x0 gfx_library/gfx_mono_c12832_a1z.o
+ .text.gfx_mono_st7565r_get_pixel
+                0x00000000       0x58 gfx_library/gfx_mono_c12832_a1z.o
+ .text.gfx_mono_st7565r_put_page
+                0x00000000      0x132 gfx_library/gfx_mono_c12832_a1z.o
+ .text.gfx_mono_st7565r_put_framebuffer
+                0x00000000       0xf2 gfx_library/gfx_mono_c12832_a1z.o
+ .text.gfx_mono_st7565r_get_page
+                0x00000000        0x6 gfx_library/gfx_mono_c12832_a1z.o
+ .text.gfx_mono_st7565r_mask_byte
+                0x00000000       0x40 gfx_library/gfx_mono_c12832_a1z.o
+ .text          0x00000000        0x0 gfx_library/gfx_mono_framebuffer.o
+ .bss           0x00000000        0x0 gfx_library/gfx_mono_framebuffer.o
+ .text.gfx_mono_framebuffer_put_page
+                0x00000000       0x26 gfx_library/gfx_mono_framebuffer.o
+ .text.gfx_mono_framebuffer_get_page
+                0x00000000       0x26 gfx_library/gfx_mono_framebuffer.o
+ .text.gfx_mono_framebuffer_draw_pixel
+                0x00000000       0x7e gfx_library/gfx_mono_framebuffer.o
+ .text.gfx_mono_framebuffer_get_pixel
+                0x00000000       0x58 gfx_library/gfx_mono_framebuffer.o
+ .text.gfx_mono_framebuffer_mask_byte
+                0x00000000       0x40 gfx_library/gfx_mono_framebuffer.o
+ .text          0x00000000        0x0 gfx_library/gfx_mono_generic.o
+ .bss           0x00000000        0x0 gfx_library/gfx_mono_generic.o
+ .text.gfx_mono_generic_draw_vertical_line
+                0x00000000       0xb6 gfx_library/gfx_mono_generic.o
+ .text.gfx_mono_generic_draw_line
+                0x00000000       0xd8 gfx_library/gfx_mono_generic.o
+ .text.gfx_mono_generic_draw_rect
+                0x00000000       0x50 gfx_library/gfx_mono_generic.o
+ .text.gfx_mono_generic_draw_circle
+                0x00000000      0x188 gfx_library/gfx_mono_generic.o
+ .text.gfx_mono_generic_draw_filled_circle
+                0x00000000      0x14a gfx_library/gfx_mono_generic.o
+ .text.gfx_mono_generic_put_bitmap
+                0x00000000       0xc0 gfx_library/gfx_mono_generic.o
+ .text          0x00000000        0x0 gfx_library/gfx_mono_text.o
+ .bss           0x00000000        0x0 gfx_library/gfx_mono_text.o
+ .text.gfx_mono_draw_progmem_string
+                0x00000000       0x5e gfx_library/gfx_mono_text.o
+ .text.gfx_mono_get_string_bounding_box
+                0x00000000       0x36 gfx_library/gfx_mono_text.o
+ .text.gfx_mono_get_progmem_string_bounding_box
+                0x00000000       0x4c gfx_library/gfx_mono_text.o
+ .text          0x00000000        0x0 gfx_library/st7565r.o
+ .bss           0x00000000        0x0 gfx_library/st7565r.o
+ .text          0x00000000        0x0 gfx_library/sysfont.o
+ .bss           0x00000000        0x0 gfx_library/sysfont.o
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega6\libgcc.a(_exit.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega6\libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega6\libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega6\libgcc.a(_exit.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega6\libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega6\libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega6\libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega6\libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega6\libgcc.a(_exit.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega6\libgcc.a(_copy_data.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega6\libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega6\libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega6\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega6\libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega6\libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega6\libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega6\libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega6\libgcc.a(_copy_data.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega6\libgcc.a(_clear_bss.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega6\libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega6\libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega6\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega6\libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega6\libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega6\libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega6\libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega6\libgcc.a(_clear_bss.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00100000         xr
+data             0x00802000         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+user_signatures  0x00850000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avrxmega6/crtx256a3bu.o
+LOAD finalcom.o
+LOAD gfx_library/gfx_mono_c12832_a1z.o
+LOAD gfx_library/gfx_mono_framebuffer.o
+LOAD gfx_library/gfx_mono_generic.o
+LOAD gfx_library/gfx_mono_text.o
+LOAD gfx_library/st7565r.o
+LOAD gfx_library/sysfont.o
+START GROUP
+LOAD c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avrxmega6\libm.a
+END GROUP
+START GROUP
+LOAD c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega6\libgcc.a
+LOAD c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avrxmega6\libm.a
+LOAD c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avrxmega6\libc.a
+END GROUP
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x1858
+ *(.vectors)
+ .vectors       0x00000000      0x1fc c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avrxmega6/crtx256a3bu.o
+                0x00000000                __vector_default
+                0x00000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+                0x000001fc                . = ALIGN (0x2)
+                0x000001fc                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x000001fc        0x0 linker stubs
+ *(.trampolines*)
+                0x000001fc                __trampolines_end = .
+ *(.progmem*)
+ .progmem.data.sysfont_glyphs
+                0x000001fc      0x292 gfx_library/sysfont.o
+                0x0000048e                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x0000048e                __ctors_start = .
+ *(.ctors)
+                0x0000048e                __ctors_end = .
+                0x0000048e                __dtors_start = .
+ *(.dtors)
+                0x0000048e                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x0000048e        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avrxmega6/crtx256a3bu.o
+                0x0000048e                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x0000048e       0x10 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avrxmega6/crtx256a3bu.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x0000049e       0x1a c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega6\libgcc.a(_copy_data.o)
+                0x0000049e                __do_copy_data
+ .init4         0x000004b8       0x10 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega6\libgcc.a(_clear_bss.o)
+                0x000004b8                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x000004c8        0x6 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avrxmega6/crtx256a3bu.o
+ *(.init9)
+ *(.text)
+ .text          0x000004ce        0x2 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avrxmega6/crtx256a3bu.o
+                0x000004ce                __vector_38
+                0x000004ce                __vector_104
+                0x000004ce                __vector_22
+                0x000004ce                __vector_63
+                0x000004ce                __vector_28
+                0x000004ce                __vector_67
+                0x000004ce                __vector_1
+                0x000004ce                __vector_119
+                0x000004ce                __vector_32
+                0x000004ce                __vector_75
+                0x000004ce                __vector_71
+                0x000004ce                __vector_91
+                0x000004ce                __vector_34
+                0x000004ce                __vector_62
+                0x000004ce                __vector_77
+                0x000004ce                __vector_102
+                0x000004ce                __vector_24
+                0x000004ce                __vector_12
+                0x000004ce                __vector_55
+                0x000004ce                __vector_69
+                0x000004ce                __vector_81
+                0x000004ce                __vector_90
+                0x000004ce                __vector_46
+                0x000004ce                __bad_interrupt
+                0x000004ce                __vector_122
+                0x000004ce                __vector_72
+                0x000004ce                __vector_114
+                0x000004ce                __vector_6
+                0x000004ce                __vector_110
+                0x000004ce                __vector_31
+                0x000004ce                __vector_92
+                0x000004ce                __vector_35
+                0x000004ce                __vector_78
+                0x000004ce                __vector_74
+                0x000004ce                __vector_117
+                0x000004ce                __vector_39
+                0x000004ce                __vector_107
+                0x000004ce                __vector_3
+                0x000004ce                __vector_105
+                0x000004ce                __vector_98
+                0x000004ce                __vector_23
+                0x000004ce                __vector_68
+                0x000004ce                __vector_30
+                0x000004ce                __vector_73
+                0x000004ce                __vector_45
+                0x000004ce                __vector_25
+                0x000004ce                __vector_93
+                0x000004ce                __vector_61
+                0x000004ce                __vector_11
+                0x000004ce                __vector_54
+                0x000004ce                __vector_99
+                0x000004ce                __vector_13
+                0x000004ce                __vector_17
+                0x000004ce                __vector_19
+                0x000004ce                __vector_56
+                0x000004ce                __vector_7
+                0x000004ce                __vector_125
+                0x000004ce                __vector_49
+                0x000004ce                __vector_123
+                0x000004ce                __vector_41
+                0x000004ce                __vector_86
+                0x000004ce                __vector_100
+                0x000004ce                __vector_101
+                0x000004ce                __vector_64
+                0x000004ce                __vector_88
+                0x000004ce                __vector_109
+                0x000004ce                __vector_43
+                0x000004ce                __vector_27
+                0x000004ce                __vector_5
+                0x000004ce                __vector_113
+                0x000004ce                __vector_33
+                0x000004ce                __vector_76
+                0x000004ce                __vector_115
+                0x000004ce                __vector_47
+                0x000004ce                __vector_52
+                0x000004ce                __vector_37
+                0x000004ce                __vector_95
+                0x000004ce                __vector_103
+                0x000004ce                __vector_96
+                0x000004ce                __vector_89
+                0x000004ce                __vector_108
+                0x000004ce                __vector_4
+                0x000004ce                __vector_44
+                0x000004ce                __vector_82
+                0x000004ce                __vector_106
+                0x000004ce                __vector_118
+                0x000004ce                __vector_51
+                0x000004ce                __vector_9
+                0x000004ce                __vector_2
+                0x000004ce                __vector_21
+                0x000004ce                __vector_15
+                0x000004ce                __vector_66
+                0x000004ce                __vector_36
+                0x000004ce                __vector_79
+                0x000004ce                __vector_58
+                0x000004ce                __vector_70
+                0x000004ce                __vector_83
+                0x000004ce                __vector_29
+                0x000004ce                __vector_60
+                0x000004ce                __vector_121
+                0x000004ce                __vector_40
+                0x000004ce                __vector_85
+                0x000004ce                __vector_94
+                0x000004ce                __vector_126
+                0x000004ce                __vector_8
+                0x000004ce                __vector_26
+                0x000004ce                __vector_48
+                0x000004ce                __vector_124
+                0x000004ce                __vector_116
+                0x000004ce                __vector_112
+                0x000004ce                __vector_111
+                0x000004ce                __vector_80
+                0x000004ce                __vector_14
+                0x000004ce                __vector_84
+                0x000004ce                __vector_57
+                0x000004ce                __vector_53
+                0x000004ce                __vector_10
+                0x000004ce                __vector_50
+                0x000004ce                __vector_16
+                0x000004ce                __vector_59
+                0x000004ce                __vector_18
+                0x000004ce                __vector_97
+                0x000004ce                __vector_20
+                0x000004ce                __vector_42
+                0x000004ce                __vector_87
+                0x000004ce                __vector_65
+                0x000004ce                __vector_120
+                0x000004d0                . = ALIGN (0x2)
+ *(.text.*)
+ .text.Set_Clk_32MHz
+                0x000004d0       0x20 finalcom.o
+                0x000004d0                Set_Clk_32MHz
+ .text.uart_init
+                0x000004f0       0x26 finalcom.o
+                0x000004f0                uart_init
+ .text.send_char
+                0x00000516       0x10 finalcom.o
+                0x00000516                send_char
+ .text.int_to_char
+                0x00000526       0x5c finalcom.o
+                0x00000526                int_to_char
+ .text.send_string
+                0x00000582       0x1c finalcom.o
+                0x00000582                send_string
+ .text.receive_data
+                0x0000059e       0x10 finalcom.o
+                0x0000059e                receive_data
+ .text.scan_keypad
+                0x000005ae      0x428 finalcom.o
+                0x000005ae                scan_keypad
+ .text.Password
+                0x000009d6      0x36c finalcom.o
+                0x000009d6                Password
+ .text.main     0x00000d42      0x3a8 finalcom.o
+                0x00000d42                main
+ .text.gfx_mono_st7565r_put_byte
+                0x000010ea      0x11c gfx_library/gfx_mono_c12832_a1z.o
+                0x000010ea                gfx_mono_st7565r_put_byte
+ .text.gfx_mono_st7565r_init
+                0x00001206       0x70 gfx_library/gfx_mono_c12832_a1z.o
+                0x00001206                gfx_mono_st7565r_init
+ .text.gfx_mono_st7565r_draw_pixel
+                0x00001276       0x7a gfx_library/gfx_mono_c12832_a1z.o
+                0x00001276                gfx_mono_st7565r_draw_pixel
+ .text.gfx_mono_st7565r_get_byte
+                0x000012f0        0x4 gfx_library/gfx_mono_c12832_a1z.o
+                0x000012f0                gfx_mono_st7565r_get_byte
+ .text.gfx_mono_set_framebuffer
+                0x000012f4        0xa gfx_library/gfx_mono_framebuffer.o
+                0x000012f4                gfx_mono_set_framebuffer
+ .text.gfx_mono_framebuffer_put_byte
+                0x000012fe       0x1e gfx_library/gfx_mono_framebuffer.o
+                0x000012fe                gfx_mono_framebuffer_put_byte
+ .text.gfx_mono_framebuffer_get_byte
+                0x0000131c       0x1e gfx_library/gfx_mono_framebuffer.o
+                0x0000131c                gfx_mono_framebuffer_get_byte
+ .text.gfx_mono_generic_draw_horizontal_line
+                0x0000133a       0xe0 gfx_library/gfx_mono_generic.o
+                0x0000133a                gfx_mono_generic_draw_horizontal_line
+ .text.gfx_mono_generic_draw_filled_rect
+                0x0000141a       0x36 gfx_library/gfx_mono_generic.o
+                0x0000141a                gfx_mono_generic_draw_filled_rect
+ .text.gfx_mono_draw_char
+                0x00001450       0xba gfx_library/gfx_mono_text.o
+                0x00001450                gfx_mono_draw_char
+ .text.gfx_mono_draw_string
+                0x0000150a       0x52 gfx_library/gfx_mono_text.o
+                0x0000150a                gfx_mono_draw_string
+ .text.st7565r_init
+                0x0000155c      0x2f8 gfx_library/st7565r.o
+                0x0000155c                st7565r_init
+                0x00001854                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00001854        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega6\libgcc.a(_exit.o)
+                0x00001854                _exit
+                0x00001854                exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00001854        0x4 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega6\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00001858                _etext = .
+
+.data           0x00802000      0x24c load address 0x00001858
+                0x00802000                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00802000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avrxmega6/crtx256a3bu.o
+ .data          0x00802000        0x0 finalcom.o
+ .data          0x00802000        0x0 gfx_library/gfx_mono_c12832_a1z.o
+ .data          0x00802000        0x0 gfx_library/gfx_mono_framebuffer.o
+ .data          0x00802000        0x0 gfx_library/gfx_mono_generic.o
+ .data          0x00802000        0x0 gfx_library/gfx_mono_text.o
+ .data          0x00802000        0x0 gfx_library/st7565r.o
+ .data          0x00802000        0x0 gfx_library/sysfont.o
+ .data          0x00802000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega6\libgcc.a(_exit.o)
+ .data          0x00802000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega6\libgcc.a(_copy_data.o)
+ .data          0x00802000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega6\libgcc.a(_clear_bss.o)
+ *(.data*)
+ .data.identify
+                0x00802000       0x11 finalcom.o
+                0x00802000                identify
+ .data.generate_ch
+                0x00802011        0xd finalcom.o
+                0x00802011                generate_ch
+ .data.enroll   0x0080201e        0xc finalcom.o
+                0x0080201e                enroll
+ .data.sysfont  0x0080202a        0x7 gfx_library/sysfont.o
+                0x0080202a                sysfont
+ *(.rodata)
+ *(.rodata*)
+ .rodata.str1.1
+                0x00802031      0x21b finalcom.o
+                                0x21f (size before relaxing)
+ *(.gnu.linkonce.d*)
+                0x0080224c                . = ALIGN (0x2)
+                0x0080224c                _edata = .
+                0x0080224c                PROVIDE (__data_end, .)
+
+.bss            0x0080224c      0x225
+                0x0080224c                PROVIDE (__bss_start, .)
+ *(.bss)
+ *(.bss*)
+ .bss.i         0x0080224c        0x1 finalcom.o
+                0x0080224c                i
+ .bss.u3        0x0080224d        0x1 finalcom.o
+                0x0080224d                u3
+ .bss.u2        0x0080224e        0x1 finalcom.o
+                0x0080224e                u2
+ .bss.u0        0x0080224f        0x1 finalcom.o
+                0x0080224f                u0
+ .bss.rx        0x00802250        0x1 finalcom.o
+                0x00802250                rx
+ .bss.framebuffer
+                0x00802251      0x200 gfx_library/gfx_mono_c12832_a1z.o
+ .bss.fbpointer
+                0x00802451        0x2 gfx_library/gfx_mono_framebuffer.o
+ *(COMMON)
+ COMMON         0x00802453       0x1e finalcom.o
+                0x00802453                fp
+                0x00802467                temp
+                0x00802468                pwd
+                0x0080246b                dummy
+                0x0080246c                str
+                0x00802470                rec
+                0x00802471                PROVIDE (__bss_end, .)
+                0x00001858                __data_load_start = LOADADDR (.data)
+                0x00001aa4                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00802471        0x0
+                0x00802471                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00802471                PROVIDE (__noinit_end, .)
+                0x00802471                _end = .
+                0x00802471                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x30
+ *(.comment)
+ .comment       0x00000000       0x30 finalcom.o
+                                 0x31 (size before relaxing)
+ .comment       0x00000000       0x31 gfx_library/gfx_mono_c12832_a1z.o
+ .comment       0x00000000       0x31 gfx_library/gfx_mono_framebuffer.o
+ .comment       0x00000000       0x31 gfx_library/gfx_mono_generic.o
+ .comment       0x00000000       0x31 gfx_library/gfx_mono_text.o
+ .comment       0x00000000       0x31 gfx_library/st7565r.o
+ .comment       0x00000000       0x31 gfx_library/sysfont.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x1e8
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x60 finalcom.o
+ .debug_aranges
+                0x00000060       0x60 gfx_library/gfx_mono_c12832_a1z.o
+ .debug_aranges
+                0x000000c0       0x58 gfx_library/gfx_mono_framebuffer.o
+ .debug_aranges
+                0x00000118       0x58 gfx_library/gfx_mono_generic.o
+ .debug_aranges
+                0x00000170       0x40 gfx_library/gfx_mono_text.o
+ .debug_aranges
+                0x000001b0       0x20 gfx_library/st7565r.o
+ .debug_aranges
+                0x000001d0       0x18 gfx_library/sysfont.o
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x43ef
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000     0x1b1f finalcom.o
+ .debug_info    0x00001b1f      0xadf gfx_library/gfx_mono_c12832_a1z.o
+ .debug_info    0x000025fe      0x43c gfx_library/gfx_mono_framebuffer.o
+ .debug_info    0x00002a3a      0xbfc gfx_library/gfx_mono_generic.o
+ .debug_info    0x00003636      0x6eb gfx_library/gfx_mono_text.o
+ .debug_info    0x00003d21      0x583 gfx_library/st7565r.o
+ .debug_info    0x000042a4      0x14b gfx_library/sysfont.o
+
+.debug_abbrev   0x00000000      0xe26
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x301 finalcom.o
+ .debug_abbrev  0x00000301      0x2ed gfx_library/gfx_mono_c12832_a1z.o
+ .debug_abbrev  0x000005ee      0x187 gfx_library/gfx_mono_framebuffer.o
+ .debug_abbrev  0x00000775      0x1d9 gfx_library/gfx_mono_generic.o
+ .debug_abbrev  0x0000094e      0x250 gfx_library/gfx_mono_text.o
+ .debug_abbrev  0x00000b9e      0x1bc gfx_library/st7565r.o
+ .debug_abbrev  0x00000d5a       0xcc gfx_library/sysfont.o
+
+.debug_line     0x00000000     0x231f
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x00000000      0xc99 finalcom.o
+ .debug_line    0x00000c99      0x637 gfx_library/gfx_mono_c12832_a1z.o
+ .debug_line    0x000012d0      0x293 gfx_library/gfx_mono_framebuffer.o
+ .debug_line    0x00001563      0x594 gfx_library/gfx_mono_generic.o
+ .debug_line    0x00001af7      0x333 gfx_library/gfx_mono_text.o
+ .debug_line    0x00001e2a      0x42e gfx_library/st7565r.o
+ .debug_line    0x00002258       0xc7 gfx_library/sysfont.o
+
+.debug_frame    0x00000000      0x62c
+ *(.debug_frame)
+ .debug_frame   0x00000000       0xd0 finalcom.o
+ .debug_frame   0x000000d0      0x154 gfx_library/gfx_mono_c12832_a1z.o
+ .debug_frame   0x00000224       0xd0 gfx_library/gfx_mono_framebuffer.o
+ .debug_frame   0x000002f4      0x21c gfx_library/gfx_mono_generic.o
+ .debug_frame   0x00000510       0xec gfx_library/gfx_mono_text.o
+ .debug_frame   0x000005fc       0x30 gfx_library/st7565r.o
+
+.debug_str      0x00000000      0xc77
+ *(.debug_str)
+ .debug_str     0x00000000      0x477 finalcom.o
+                                0x4d9 (size before relaxing)
+ .debug_str     0x00000477      0x2bf gfx_library/gfx_mono_c12832_a1z.o
+                                0x563 (size before relaxing)
+ .debug_str     0x00000736       0xa5 gfx_library/gfx_mono_framebuffer.o
+                                0x35a (size before relaxing)
+ .debug_str     0x000007db      0x220 gfx_library/gfx_mono_generic.o
+                                0x4a6 (size before relaxing)
+ .debug_str     0x000009fb      0x14b gfx_library/gfx_mono_text.o
+                                0x3da (size before relaxing)
+ .debug_str     0x00000b46      0x109 gfx_library/st7565r.o
+                                0x3fe (size before relaxing)
+ .debug_str     0x00000c4f       0x28 gfx_library/sysfont.o
+                                0x1e3 (size before relaxing)
+
+.debug_loc      0x00000000     0x35b3
+ *(.debug_loc)
+ .debug_loc     0x00000000      0xbb7 finalcom.o
+ .debug_loc     0x00000bb7      0xa3a gfx_library/gfx_mono_c12832_a1z.o
+ .debug_loc     0x000015f1      0x592 gfx_library/gfx_mono_framebuffer.o
+ .debug_loc     0x00001b83     0x10aa gfx_library/gfx_mono_generic.o
+ .debug_loc     0x00002c2d      0x957 gfx_library/gfx_mono_text.o
+ .debug_loc     0x00003584       0x2f gfx_library/st7565r.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x00000000      0x1e8
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0x50 finalcom.o
+ .debug_ranges  0x00000050       0xc8 gfx_library/gfx_mono_c12832_a1z.o
+ .debug_ranges  0x00000118       0x48 gfx_library/gfx_mono_framebuffer.o
+ .debug_ranges  0x00000160       0x48 gfx_library/gfx_mono_generic.o
+ .debug_ranges  0x000001a8       0x30 gfx_library/gfx_mono_text.o
+ .debug_ranges  0x000001d8       0x10 gfx_library/st7565r.o
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(finalcom.elf elf32-avr)
+LOAD linker stubs
